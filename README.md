@@ -1,1 +1,1 @@
-# DWC26_GroupName
+# DWC26_NexusIQ
