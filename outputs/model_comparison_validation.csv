@@ -1,0 +1,3 @@
+,oil whole-curve %,oil at 2008 %,gas whole-curve %,gas at 2008 %,water whole-curve %,water at 2008 %
+dense network,1.95,1.75,2.08,1.58,3.61,2.54
+PCA + GPR,0.11,0.11,0.11,0.12,0.54,0.53
