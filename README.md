@@ -22,6 +22,20 @@ Members: Chua Siew Tze, Chan Shan Wen, Aisyah Binti Shaaroni, Isma Yasmin Binti 
 - outputs: cleaned quarterly tables, trained models, charts, the filled template (forecast_filled_template.xlsx), revenue_scenarios.csv and assumptions.md
 - Trained model: outputs/pca_gpr_model.joblib (PCA + Gaussian Process, the final model) and outputs/dense_model.keras (benchmark)
 
+## Which file belongs to which part of the solution
+
+| Part of the solution | Files |
+|---|---|
+| Input tables for the models (cleaned, quarterly) | outputs/case_settings.csv, outputs/oil_cumulative_quarterly.csv, outputs/gas_cumulative_quarterly.csv, outputs/water_cumulative_quarterly.csv |
+| Benchmark model: Keras dense neural network | outputs/dense_model.keras, outputs/scaling.npz |
+| Final model: PCA + Gaussian Process Regression | outputs/pca_gpr_model.joblib |
+| Model comparison (validation errors) | outputs/model_comparison_validation.csv, outputs/model_comparison_oil.png, outputs/model_comparison_all_fluids.png |
+| History matching and choice of the 10 cases | outputs/best10_given_cases.csv: the 10 cases from the 100 provided cases that we put in the template (the submission). outputs/best10_settings.csv: 10 parameter combinations the model found by itself, not in the provided cases. These were not submitted and are for reference only. |
+| 20-year forecast (to 1 Jan 2028) | outputs/quarterly_volumes_and_rates.csv, outputs/forecast_rates.png, outputs/forecast_charts.png |
+| Updated forecast template (deliverable) | outputs/forecast_filled_template.xlsx, outputs/template_case_mapping.csv (template sheet to provided case) |
+| Revenue scenarios (low / base / high price) | outputs/revenue_scenarios.csv |
+| Assumptions | outputs/assumptions.md |
+
 ## Notes
 - The original case datasets (files 01-08) are not included. The notebook reads the
   cleaned quarterly tables in outputs/ instead.
